@@ -1,0 +1,8 @@
+-- Return blink.cmp lsp capabilities
+local M = {}
+
+function M.get()
+    return require("blink.cmp").get_lsp_capabilities()
+end
+
+return M

@@ -6,7 +6,7 @@
 
 ## About
 
-This repository contains the configuration files (`dotfiles`) and command-line tools I use for my macOS terminal-based development environment.
+This repository contains the configuration `dotfiles` and command-line tools I use in my macOS terminal-based development environment.
 
 ## Repository Structure
 
@@ -18,7 +18,7 @@ macos-terminal-env
 ├── starship/          - terminal prompt
 ├── tmux/              - multiplexer
 ├── zsh/               - macOS Z shell
-├──.stowrc             - GNU Stow resource file
+├── .stowrc            - GNU Stow resource file
 ├── Brewfile           - homebrew CLI bundle
 ├── install.sh         - install script
 └── README.md          - this file
@@ -26,7 +26,7 @@ macos-terminal-env
 
 ## Configuration Files
 
-Configuration files (`dotfiles`) are contained within a dedicated directory: ghostty, git, nvim, starship, tmux, and zsh.
+Configuration `dotfiles` are contained within a dedicated directory: ghostty, git, nvim, starship, tmux, and zsh.
 
 Each subdirectory/package is structured for use with [GNU Stow](https://www.gnu.orgsoftware/stow) and mirrors the target filesystem layout.
 
@@ -56,20 +56,20 @@ The depenencies contained in this bundle support the use of a terminal as the pr
     pyenv                   - Python version management
     ripgrep                 - lightning-fast search tool
     rust                    - blazingly fast and memory-efficient programming language
+    starship                - cross-shell prompt
+    stow                    - symlink farm manager
+    tcl-tk                  - graphical UI toolkit
+    tmux                    - terminal multiplexer
+    tree-sitter-cli         - parser generator tool
+    uv                      - Extremely fast Python package installer/resolver
+    zlib                    - lossless data compression SW library
+    zoxide                  - a smarter cd command
+    zsh-autosuggestions     - fish-like autosuggestions
+    zsh-syntax-highlighting - fish-like syntax highlighting
 
-starship - cross-shell prompt
-stow - symlink farm manager
-tcl-tk - graphical UI toolkit
-tmux - terminal multiplexer
-tree-sitter-cli - parser generator tool
-uv - Extremely fast Python package installer/resolver
-zlib - lossless data compression SW library
-zoxide - a smarter cd command
-zsh-autosuggestions - fish-like autosuggestions
-zsh-syntax-highlighting - fish-like syntax highlighting
-Casks:
-font-meslo-lg-nerd-font - nerd font
-ghostty - cross-platform terminal emulator
+    Casks:
+    font-meslo-lg-nerd-font - nerd font
+    ghostty                 - cross-platform terminal emulator
 
 </details>
 
@@ -86,12 +86,13 @@ Paste the following in the macOS Terminal:
 
 The `install.sh` script performs the following:
 
-1. Installs the Xcode command-line tools
-2. Installs & Updates `Homebrew` (macOS package manager)
-3. Clones this repo to `~/.dotfiles`
-4. Install the dependencies using `brew bundle`
-5. Apply configurations using `stow`
+1. Installs the `Xcode Command-Line` tools (if not already installed).
+2. Installs and updates the `Homebrew` macOS package manager (if not already installed).
+3. Clones this repo to `~/.dotfiles`. If the repo already exists, a `git pull` is performed instead).
+4. Installs and/or updates CLI dependencies using `brew bundle`.
+5. Applies configurations using `stow`.
 
 ---
 
-[![](https://img.shields.io/github/license/hofb913/terminal-env?style=for-the-badge&logo=Github)](https://github.com/hofb913/terminal-env/blob/master/LICENSE)
+<p align="center">This project is licensed under the terms of the MIT license.</p>
+<p align="center"><a href="https://github.com/hofb913/terminal-env/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-brightghreen?style=for-the-badge&logo=github"/></a></p>

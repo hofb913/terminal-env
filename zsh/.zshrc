@@ -39,7 +39,7 @@ fi
 # Aliases  (run alias for a complete list)
 
 # Better defaults
-alias ls="eza --icons"
+alias ls="eza --icons auto"
 alias cat="bat"
 
 # Git shortcuts

@@ -81,7 +81,7 @@ The depenencies contained in this bundle support the use of a terminal as the pr
 Paste the following in the macOS Terminal:
 
 ```
-/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/hofb913/macos-terminal-env/main/install.sh)"
+/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/hofb913/terminal-env/main/install.sh)"
 ```
 
 The `install.sh` script performs the following:
